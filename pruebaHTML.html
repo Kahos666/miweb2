@@ -42,33 +42,64 @@
 CSS
 ------
 html {background-color:#C9C9C9}
+
 header {text-align: center;
   padding-top: 5px;
   margin: 0px;
   width:100%;
   position:fixed;
 }
+
 header>ul{margin: auto;
   width: 100%;
-  background: rgba(0,0,0,0.4);}
+  height: 50px;
+  background: rgba(0,0,0,0.4);
+}
+
 header>ul>li{list-style-type: none;
   font-weight: bold;
    display: inline;
   width: 100%;
    padding-right: 8%;
-   color: rgba(black);}
-body {margin:0px}
+   color: rgba(black);
+}
+
+#cabecera {background-image: url(/HTML/MIWEB2/banner_titulo.jpg);
+    height: 200px;
+   display: flex;
+  justify-content: center;
+   margin: 0px;
+padding-top: 20px
+}
+
+/*#div-tit{background-color: black;}*/
+
+#titulo{margin: 50px;
+    font-size: 100px;
+    font-weight: bold;
+    font-family: fantasy;
+    letter-spacing: 3px;
+    -webkit-text-stroke: 1px black;
+    color: #00ffc4;
+    /*border: 3px solid black;*/
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 50px;
+    text-shadow:10px 10px 40px blue;
+    
+}
+
+body {margin:0px;
+}
+
 p {color: #003EFF;
    margin-left: 20px;
    margin-left: 20px;
    font-family: verdana;
    font-size: 11px;
-   font-weight: bold}
-body>div {background-color: #FF8B8B;
-   display: flex;
-  justify-content: center;
-   margin: 0px;
-padding-top: 20px}
+   font-weight: bold
+}
+
 #prueba {background-color:#FFDDA5;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -76,9 +107,15 @@ padding-top: 20px}
   margin-right:120px;
   padding-top:0px;
   padding-right:5px;
-  border:0px;}
-#lista{margin-right: 300px;}
-#parrafo{margin: 0 auto;}
-#lista>ul>li{list-style-type:none;}
+  border:0px;
+}
+
+#lista{margin-right:30%;
+}
+
+#lista>ul>li{list-style-type:none;
+}
+
 body>div>h1:hover{transition: all 1s linear;
 color: blue;}
+
