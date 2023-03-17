@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt;>
   <title>HTML</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="miweb2.css">
 </head>
   <header>
     <ul>
-      <li><a href = "#1">INICIO</a></li>
-      <li>NOVEDADES</li>
-      <li>TOP VENTAS</li>
-      <li>CATEGORÍAS</li>
-      <li>CONTACTO</li>
+      <li class = "menu"><a href = "#titulo">INICIO</a></li>
+      <li class = "menu"><a href = "#2">NOVEDADES</a></li>
+      <li class = "menu"><a href = "#3">TOP VENTAS</a></li>
+      <li class = "menu"><a href = "#4">CATEGORÍAS</a></li>
+      <li class = "menu"><a href = "#5">CONTACTO</a></li>
     </ul>
   </header>
 <body>
@@ -43,7 +43,31 @@
       </p>
     </div>
   </div>
-  <h1>NOVEDADES</h1>
+  <h1 id = "2" class = "apartado"><a href = "#titulo" class = "encabezados">NOVEDADES</a></h1>
+  <div id = "prueba">
+    <div id = "lista">
+      <ol id = "unos">
+        <li>Batman: Preludio de la boda.</li>
+        <li>Batman: Tierra Uno 1 (DC Pocket)</li>
+        <li>El Acertijo: Año Uno 1</li>
+        <li>Nightwing 1: Mejor que Batman</li>
+        <li>Ice Cream Man 4</li>
+        <li>Biblioteca Marvel: El poderoso Thor 2</li>
+        <li>Biblioteca Marvel: El Invencible Iron Man 1</li>
+        <li>Biblioteca Marvel: Los Cuatro Fantásticos 3</li>
+        <li>Antman: Siempre hombre hormiga</li>
+        
+      </ol>
+    </div>
+    <div id = "parrafo">
+      <p>
+        A parte de esta maravillosa lista de proximos lanzamientos en un formato analógico, hoy en día, ¿como se leen los comics?. <br><br> En la actualidad, existen multitud de webs que ofrecen cómics digitales de forma gratuita. Pero, sin lugar a dudas, una está por encima de todas, la cual se llama Vercomics.com, puesto que es una página que funciona de forma fluida y constante; y que además cuenta con una infinidad de tebeos al alcance de tus manos.
+<br><br>
+El funcionamiento de Vercomics es muy sencillo, ya que podrás buscar según la tipología que más te guste. Una vez la hayas elegido, te aparecerá un listado con un gran número de tebeos. Cuando selecciones el que más te guste, te permitirá leerlo insitu en la web, sin necesidad de descargarlo.
+      </p>
+    </div>
+  </div>
+  <h1 id = "3" class = "apartado"><a href = "#titulo">TOP VENTAS</a></h1>
   <div id = "prueba">
     <div id = "lista">
       <ul id = "unos">
@@ -65,29 +89,7 @@
       </p>
     </div>
   </div>
-  <h1>TOP VENTAS</h1>
-  <div id = "prueba">
-    <div id = "lista">
-      <ul id = "unos">
-        <li>uno</li>
-        <li>uno</li>
-        <li>uno</li>
-        <li>uno</li>
-        <li>uno</li>
-        <li>uno</li>
-        <li>uno</li>
-        <li>uno</li>
-        <li>uno</li>
-        
-      </ul>
-    </div>
-    <div id = "parrafo">
-      <p>
-        Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida
-      </p>
-    </div>
-  </div>
-  <h1>CATEGORÍAS</h1>
+  <h1 id = "4" class = "apartado"><a href = "#titulo">CATEGORÍAS</a></h1>
   <div id = "prueba">
     <div id = "lista">
       <ul id = "unos">
@@ -110,9 +112,13 @@
     </div>
   </div>
 </body>
-<footer class ="pie">
+<footer id = "5" class ="pie">
   <div class = "prueba2">
     <p>CONTACTANOS -></p>
+    <img insta></img>
+    <img twitter></img>
+    <img gmail></img>
+    <img wathsapp></img>
   </div>
   <div class = "copy">
     <p class = "copy2">Copyright © 2023</p>
@@ -122,7 +128,8 @@
 --------------------------------------------------------------
 CSS
 ------
-html {background-color:#C9C9C9}
+html {background-color:#C9C9C9;
+scroll-behavior: smooth;}
 
 header {text-align: center;
   padding-top: 5px;
@@ -135,15 +142,34 @@ header>ul{margin: auto;
   width: 100%;
   height: 50px;
   background: rgba(0,0,0,0.4);
+  display:flex;
+  justify-content: center;
 }
 
-header>ul>li{list-style-type: none;
+a{text-decoration: none;
+  color: black;
+  transition: text-shadow 0.3s ease;
+  transition: color 0.3s ease;
+  font-family:cursive;
+}
+
+.menu{list-style-type: none;
   font-weight: bold;
+  font-size: 20px;
   display: inline;
   width: 100%;
   padding-right: 8%;
   color: rgba(black);
+  transition: color 0.5s ease;
+  -webkit-text-stroke: 0.2px #d8da3d;
+  margin-right: 0 .75rem;
 }
+
+a:visited{color: rgba(black);
+  -webkit-text-stroke: 0.2px #d8da3d;}
+
+a:hover{text-shadow:0px 0px 5px blue;
+  color : white;}
 
 #cabecera {background-image: url(/HTML/MIWEB2/banner_titulo.jpg);
   height: 200px;
@@ -177,12 +203,30 @@ p {color: #003EFF;
   margin-left: 20px;
   margin-left: 20px;
   font-family: verdana;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: bold
 }
 
 h1{text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.apartado{color: black;
+  transition: color 0.5s linear;
+  transition: box-shadow 0.5s linear;
+  transition: border-radius 0.5s linear;
+  /*border: solid black 2px;*/
+  border-radius:0%;
+  margin-right:380px;
+  margin-left: 380px;
+  box-shadow:0px 0px 0px blue;
+  
+}
+
+.apartado>a:hover{color: #FF6100;
+  text-shadow: none;
+  box-shadow:inset 0px 0px 20px blue;
+  border-radius:100%
 }
 
 #prueba {background-color:#FFDDA5;
@@ -192,18 +236,18 @@ h1{text-align: center;
   margin-right:120px;
   padding-top:0px;
   padding-right:5px;
-  border:0px;
+  /*border:0px;*/
   border-radius: 20px;
   display: flex;
   position: static;
+  box-shadow: 0px 0px 0px #333;
+  transition: box-shadow 0.3s ease;
 }
 
-#prueba:hover{margin-right: 100px;
-  margin-left: 100px;
-}
+#prueba:hover{box-shadow: 0px 0px 30px #333;}
 
 #lista{
-  border: black solid 1px;
+ /* border: black solid 1px;*/
   position: relative;
   margin: 0px;
   padding: 0px;
@@ -212,10 +256,15 @@ h1{text-align: center;
 }
 
 #unos{margin: 0 auto;
-align-self: center;}
+align-self: center;
+}
+
+#unos>li{padding-bottom: 8px;
+  font-size: 17px;
+}
 
 #parrafo{
-  border: black solid 1px;
+ /* border: black solid 1px;*/
   position: relative;
   width: 50%;
 }
@@ -225,6 +274,8 @@ align-self: center;}
 
 .pie{background-color: coral;
   display: flex;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .prueba2{float: left;
@@ -232,13 +283,7 @@ align-self: center;}
   width: 50%;
 }
 
-.copy{position:relative;
-
-  border: black solid 1px;
+.copy{border: black solid 1px;
   width: 50%;
   text-align: right;
 }
-
-.copy2{position:relative;
-}
-
