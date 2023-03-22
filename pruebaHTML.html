@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="miweb2.css">
 </head>
-  <header>
+  <header id = "comicland">
     <ul>
       <li class = "menu"><a href = "#titulo">INICIO</a></li>
       <li class = "menu"><a href = "#2">NOVEDADES</a></li>
@@ -21,7 +21,7 @@
         <h1 id = "titulo">COMICLAND</h1>
     </div>
   </div>
-  <p>Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.Esta página web es una página HTML válida.</p>
+  <p id = "intro">El origen de los cómics se remonta a miles de años. Desde que el ser humano tuvo la necesidad de dibujar para poder explicar una historia, aventura, acontecimiento o leyenda. Alumbrado por la luz cimbreante de una hoguera, un viejo cazador pintaba en el fondo de una cueva una secuencia de caza. Lo hacía con un tizón acabado de extraer del fuego, hace tal vez 14.000 años.</br></br>Fue el primero de una larga historia, pero las pinturas egipcias, las vasijas griegas, los frescos romanos, las pinturas eclesiásticas y los manuscritos medievales que relataban las vidas de Jesús y de los santos no se consideran historietas, y hay que esperar a la sátira social y política para encontrar los antecedentes reconocibles del cómic. Al principio no son más que meras caricaturas o dibujos para ilustrar una historia o pequeñas narraciones sin solución de continuidad.</br></br>La primera novela gráfica se publica en Suiza. Inspirado en Rowlandson y animado por Goethe, el suizo Rudolph Töpfer publica en 1837 “Las aventuras de Obadiah Oldbuck”, un libro de cuarenta páginas con varios dibujos en cada página y los textos al pie de los mismos.</p>
   <div id = "prueba">
     <div id = "lista">
       <ul id = "unos">
@@ -43,7 +43,7 @@
       </p>
     </div>
   </div>
-  <h1 id = "2" class = "apartado"><a href = "#titulo" class = "encabezados">NOVEDADES</a></h1>
+  <h1 id = "2" class = "apartado"><a href = "#comicland" class = "encabezados">NOVEDADES</a></h1>
   <div id = "prueba">
     <div id = "lista">
       <ol id = "unos">
@@ -67,7 +67,7 @@ El funcionamiento de Vercomics es muy sencillo, ya que podrás buscar según la 
       </p>
     </div>
   </div>
-  <h1 id = "3" class = "apartado"><a href = "#titulo">TOP VENTAS</a></h1>
+  <h1 id = "3" class = "apartado"><a href = "#comicland">TOP VENTAS</a></h1>
   <div id = "prueba">
     <div id = "lista">
       <ul id = "unos">
@@ -89,7 +89,7 @@ El funcionamiento de Vercomics es muy sencillo, ya que podrás buscar según la 
       </p>
     </div>
   </div>
-  <h1 id = "4" class = "apartado"><a href = "#titulo">CATEGORÍAS</a></h1>
+  <h1 id = "4" class = "apartado"><a href = "#comicland">CATEGORÍAS</a></h1>
   <div id = "prueba">
     <div id = "lista">
       <ul id = "unos">
@@ -128,14 +128,14 @@ El funcionamiento de Vercomics es muy sencillo, ya que podrás buscar según la 
 --------------------------------------------------------------
 CSS
 ------
-html {background-color:#C9C9C9;
+html {background:linear-gradient(30deg, crimson,royalblue, indianred, purple);
 scroll-behavior: smooth;}
 
 header {text-align: center;
   padding-top: 5px;
   margin: 0px;
   width:100%;
-  position:fixed;
+  position:absolute;
 }
 
 header>ul{margin: auto;
@@ -199,6 +199,10 @@ a:hover{text-shadow:0px 0px 5px blue;
 body {margin:0px;
 }
 
+#intro{color: black;
+  font-size: 14px;  
+}
+
 p {color: #003EFF;
   margin-left: 20px;
   margin-left: 20px;
@@ -225,7 +229,6 @@ h1{text-align: center;
 
 .apartado>a:hover{color: #FF6100;
   text-shadow: none;
-  box-shadow:inset 0px 0px 20px blue;
   border-radius:100%
 }
 
@@ -279,11 +282,11 @@ align-self: center;
 }
 
 .prueba2{float: left;
-  border: black solid 1px;
+  /*border: black solid 1px;*/
   width: 50%;
 }
 
-.copy{border: black solid 1px;
+.copy{/*border: black solid 1px;*/
   width: 50%;
   text-align: right;
 }
